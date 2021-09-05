@@ -1,0 +1,44 @@
+/* PC */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width: 64em) {
+    .btn {
+        display: none;
+    }
+
+    .toast__btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn--responsive + .btn--responsive {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+    .btn--responsive {
+        display: inline-block;
+        min-width: 120px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 64em) {
+    .btn--responsive {
+        padding: 64px 128px;
+        border-radius: 120px;
+        font-size: 32px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.25em) {
+    .toast {
+        min-width: 240px;
+        max-width: 320px;
+    }
+}
